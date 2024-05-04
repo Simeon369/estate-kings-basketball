@@ -1,0 +1,25 @@
+.gallery, .gallery2{
+    display: flex;
+    gap: 80px;
+}
+.gallery2:last-child{
+    margin-right: 80px;
+}
+
+marquee{
+    display: flex;
+    padding: 60px 0;
+}
+.pic{
+    width: 350px;
+    height: 170px;
+    border: 2px solid ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow{
+    display: flex;
+}
