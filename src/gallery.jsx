@@ -1,19 +1,31 @@
 import React from "react";
+import data from "./data";
+
+function Box(props){
+    return(
+        <div className="pic"><img src={props.image} alt="" /></div>
+    )
+}
 
 export default function Gallery(){
+    
+    const pic = data.map(picture => {
+        return(
+            <Box {...picture}/>
+        )
+    
+    })
     return(
-        <marquee>
-            <div className="flow">
-                <div className="gallery">
-                    <div className="pic">1</div>
-                    <div className="pic">2</div>
-                    <div className="pic">3</div>
-                    <div className="pic">4</div>
-                    <div className="pic">5</div>
-                    <div className="pic">6</div>
-                    <div className="pic">7</div>
+        <div className="gallery">
+            <h1>Gallery</h1>
+            <marquee>
+
+                <div className="photos">
+                    {pic}  
                 </div>
-            </div>
-        </marquee>
+                
+            </marquee>
+            
+        </div>
     )
 }
