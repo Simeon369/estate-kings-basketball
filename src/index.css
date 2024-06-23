@@ -9,12 +9,18 @@
 }
 
 .Shadow{
-    text-shadow: 5px 5px black;
+    text-shadow: 7px 7px black;
 }
-
-.hover-underline:hover{
-    text-decoration: underline;
-    
+.nav-item{
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color;
+}
+.nav-item:hover{
+    background-color: white;
+    color: black;
 }
 
 
