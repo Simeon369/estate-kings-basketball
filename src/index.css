@@ -1,74 +1,23 @@
-@font-face {
-  font-family: mont;
-  src: url(/public/fonts/Montserrat-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
-  box-sizing: border-box;
-  margin: 0;
-  list-style: none;
-  --Bball:#bb3a07;
-  --nav-height: 130px;
-  
-}
-body{
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  font-family: mont;
+    font-family: "Poppins";
 }
 
-nav{
-  height: var(--nav-height);
-  padding: 20px 40px;
-  border: 2px solid #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  margin: 5px;
+.Shadow{
+    text-shadow: 5px 5px black;
 }
 
-.logo{
-  width: 80px;
+.hover-underline:hover{
+    text-decoration: underline;
+    
 }
 
 
-
-.cont{
-  width: 100%;
-  height: calc(100vh - var(--nav-height) - 10px);
-  padding: 5px;
-  overflow-y: scroll;
+.hero{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url(./assets/images/hero.jpg);
 }
-
-.cont::-webkit-scrollbar {
-  display: none;
-}
-
-.cont > *{
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: var(--Bball);
-  margin-bottom: 5px;
-}
-
-#menu{
-  background-color: white;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-@media screen and (max-width: 770px) {
-  *{
-    --nav-height: 90px;
-  }
-  nav{
-    padding: 20px;
-  }
-  .logo{
-    width: 50px;
-  }
-}
-
