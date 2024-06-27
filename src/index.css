@@ -23,7 +23,38 @@
     color: black;
 }
 
+.button{
+    padding: 8px 17px;
+    background-color: #ee6730;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+    scale: 1.2;
+}
+
+
 
 .hero{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url(./assets/images/hero.jpg);
+}
+
+.cta{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./assets/images/goa-abesan.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+
+}
+@media screen and (max-width: 768px) {
+    .cta{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./assets/images/cta_image.jpg);
+        background-position: top;
+    }
 }

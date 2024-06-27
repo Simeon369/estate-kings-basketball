@@ -14,7 +14,7 @@ function about() {
          our tailored programs ensure skill development, teamwork, and sportsmanship.
         Join us to elevate your game and be part of a community dedicated to excellence both on and off the court.
         </p>
-        <button className='mt-5 px-5 py-3 bg-Basketball text-white font-semibold rounded-[30px]'>
+        <button className='mt-5 button'>
             Learn more...
         </button>
       </div>

@@ -18,7 +18,7 @@ function header() {
         <p className='nav-item'>Gallery</p>
       </div>
 
-      <button className='bg-Basketball hover:bg-white hover:text-black font-bold px-5 p-2 rounded-3xl border-2 border-black transition md:hidden'>
+      <button className='button md:hidden'>
         Contact Us
       </button>
 
@@ -39,7 +39,7 @@ function header() {
         <p>Gallery</p>
       </div>
 
-      <button className='bg-Basketball hover:bg-white hover:text-black font-bold px-5 p-2 rounded-3xl border-2 border-black transition mt-5'>
+      <button className='button mt-5'>
         Contact Us
       </button>
       </div> }
