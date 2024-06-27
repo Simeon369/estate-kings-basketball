@@ -3,6 +3,8 @@ import Hero from './hero'
 import About from './about'
 import Services from './services'
 import CTA from './CTA'
+import Testimonials from './testimonial'
+import Footer from '../footer'
 
 function homePage() {
   return (
@@ -11,6 +13,8 @@ function homePage() {
       <About />
       <Services />
       <CTA />
+      <Testimonials />
+      <Footer />
     </div>
   )
 }
