@@ -25,7 +25,7 @@ function faq() {
     
      <div className='bg-Basketball py-20 flex flex-col items-center gap-10'>
         <h1 className='text-center text-white  text-4xl md:2xl font-bold'>We are here to answer all your Questions.</h1>
-        <div className=' bg-white rounded-2xl flex flex-col p-5 pb-0 w-[470px] md:w-[80%]'>
+        <div className=' bg-white rounded-2xl flex flex-col p-5 pb-0 w-[470px] md:w-[90%]'>
         <div className='flex items-center px-2'>
           <img src={ball} alt="" className='w-10'/>
           <h1 className='ml-4 text-3xl font-bold'>FAQs</h1>
