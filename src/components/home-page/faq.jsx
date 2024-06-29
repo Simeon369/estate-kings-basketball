@@ -33,7 +33,7 @@ function faq() {
         <div className='py-3'>
           {data.map(faq=>(
             <>
-              <div className=' flex flex-col p-2 border-b-2 border-gray-100 hover:text-slate-500 cursor-pointer last:border-0' key={faq.index} onClick={()=> toggleFaq(faq.index)}>
+              <div className=' flex flex-col p-2 border-b-2 border-gray-100 cursor-pointer last:border-0' key={faq.index} onClick={()=> toggleFaq(faq.index)}>
                 <div className='flex justify-between items-center'>
                   <h3 className='md:text-sm'>{faq.question}</h3>
                 <img src={faqState[faq.index] ? minus: plus} alt="" className='w-6 ' />
@@ -41,7 +41,7 @@ function faq() {
                 
                 {
                   faqState[faq.index] &&
-                  <div className=' text-black py-2 md:text-sm'>
+                  <div className=' text-black py-2 md:text-sm text-gray-600'>
                     {faq.answer}
                   </div>
                 }

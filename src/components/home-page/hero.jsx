@@ -5,7 +5,7 @@ import logo from '../../assets/images/kings-logo.png'
 
 function hero() {
   return (
-    <div className='w-full h-screen flex justify-center items-center'>
+    <div className='w-full mt-10 h-[100vh] flex justify-center items-center'>
       <div className='hero fixed w-full h-screen bg-cover bg-center top-0 left-0 -z-20'></div>
       <Header />
       <div className='flex flex-col items-center'>
