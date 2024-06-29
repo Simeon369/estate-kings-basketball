@@ -1,11 +1,11 @@
 import React from 'react'
 import StarRating from './star-rating';
-import testimonials from './testimonial-data';
+import testimonials from './data/testimonial-data';
 
 function testimonial() {
   return (
     <div className='flex flex-col items-center  bg-Basketball py-20 '>
-        <h1 className='text-white text-3xl mb-10 font-bold'>See what others say about Us</h1>
+        <h1 className='text-white text-3xl text-center mb-10 font-bold'>See what others say about Us</h1>
         <div className=' grid grid-cols-3 md:grid-cols-1 gap-5'>
             
                {testimonials.map((testimonial, index) => (

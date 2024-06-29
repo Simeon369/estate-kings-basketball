@@ -1,5 +1,5 @@
 import React from 'react'
-import data from './services-data'
+import data from './data/services-data'
 
 function services() {
   return (

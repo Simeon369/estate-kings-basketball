@@ -1,9 +1,9 @@
-import camp from '../../assets/images/services-camp.png'
-import coaching from '../../assets/images/services-coaching.png'
-import conditioning from '../../assets/images/services-conditioning.png'
-import tournament from '../../assets/images/services-tournament.png'
-import training from '../../assets/images/services-training.png'
-import groupTraining from '../../assets/images/services-group-training.png'
+import camp from '../../../assets/images/services-camp.png'
+import coaching from '../../../assets/images/services-coaching.png'
+import conditioning from '../../../assets/images/services-conditioning.png'
+import tournament from '../../../assets/images/services-tournament.png'
+import training from '../../../assets/images/services-training.png'
+import groupTraining from '../../../assets/images/services-group-training.png'
 
 
 const services = [

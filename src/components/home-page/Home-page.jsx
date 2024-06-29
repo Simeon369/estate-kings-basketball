@@ -4,7 +4,10 @@ import About from './about'
 import Services from './services'
 import CTA from './CTA'
 import Testimonials from './testimonial'
+import FAQ from './faq'
+import Sponsors from './sponsors'
 import Footer from '../footer'
+
 
 function homePage() {
   return (
@@ -14,6 +17,8 @@ function homePage() {
       <Services />
       <CTA />
       <Testimonials />
+      <FAQ />
+      <Sponsors />
       <Footer />
     </div>
   )
