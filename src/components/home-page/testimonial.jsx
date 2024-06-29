@@ -9,7 +9,7 @@ function testimonial() {
         <div className=' grid grid-cols-3 md:grid-cols-1 gap-5'>
             
                {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-white text-black w-[300px] flex flex-col p-5 rounded-2xl justify-between">
+                    <div key={index} className="bg-white text-black w-[300px] md:w-[90vw] flex flex-col p-5 rounded-2xl justify-between">
                         <div className='pb-5 border-b-2'>
                             <StarRating rating={testimonial.rating} />
                             <p className='font-normal'>{testimonial.testimonial}</p>
