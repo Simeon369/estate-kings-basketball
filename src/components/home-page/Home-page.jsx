@@ -7,7 +7,8 @@ import Testimonials from './testimonial'
 import FAQ from './faq'
 import Sponsors from './sponsors'
 import Footer from '../footer'
-
+import Contact from './contact'
+import Map from './map'
 
 function homePage() {
   return (
@@ -18,6 +19,8 @@ function homePage() {
       <CTA />
       <Testimonials />
       <FAQ />
+      <Contact />
+      <Map />
       <Sponsors />
       <Footer />
     </div>

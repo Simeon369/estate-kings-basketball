@@ -52,6 +52,10 @@
     
 
 }
+
+.contact-input{
+    @apply w-full h-10 pl-3 hover:outline-none
+}
 @media screen and (max-width: 768px) {
     .cta{
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./assets/images/cta_image.jpg);
