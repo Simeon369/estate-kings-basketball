@@ -28,7 +28,7 @@ function contact() {
         
         <img src={image} className='w-[400px] md:hidden rounded-tl-3xl rounded-bl-3xl' alt="" />
         
-        <div className=' space-y-4 h-[600px] w-[400px] md:w-[90%] rounded-tr-3xl rounded-br-3xl md:rounded-3xl bg-Basketball p-8  text-white'>
+        <div className=' space-y-4 min-h-[600px] w-[400px] md:w-[90%] rounded-tr-3xl rounded-br-3xl md:rounded-3xl bg-Basketball p-8  text-white'>
           <h3 className='uppercase font-semibold text-subordinate text-sm'>contact us</h3>
           <h1 className='font-bold text-4xl'>Get In Touch</h1>
           <p className='text-sm w-[85%]'>We support businesses through periods of expansion, succession, and all other important transactions.</p>
