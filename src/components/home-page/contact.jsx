@@ -37,8 +37,8 @@ function contact() {
             <input type="text" className='contact-input' name='name' onChange={handleChange} value={formData.name}  required placeholder='Name'  />
             <input type="email" className='contact-input' name='email' value={formData.email} onChange={handleChange} required placeholder='Email' />
             <input type="tel" className='contact-input'  name='phone' value={formData.phone} onChange={handleChange} required placeholder='Phone'/>
-            <textarea id="" rows={5} name='message' className=' w-full px-3 py-2 outline-none'   value={formData.message} onChange={handleChange} required placeholder='Write your message'></textarea>
-            <button type='submit' className='bg-white  px-7 py-3 text-neutral-800 text-sm mt-5 rounded-lg'>Make an Appointment</button>
+            <textarea id="" rows={5} name='message' className=' w-full px-3 py-2 outline-none text-black'   value={formData.message} onChange={handleChange} required placeholder='Write your message'></textarea>
+            <button type='submit' className='bg-white  px-7 py-3 font-semibold text-neutral-800 text-sm mt-5 rounded-lg'>Send a message</button>
           </form>
         </div>
     </div>

@@ -54,7 +54,7 @@
 }
 
 .contact-input{
-    @apply w-full h-10 pl-3 hover:outline-none
+    @apply w-full h-10 pl-3 hover:outline-none text-black
 }
 @media screen and (max-width: 768px) {
     .cta{

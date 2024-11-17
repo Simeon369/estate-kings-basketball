@@ -6,11 +6,19 @@ import CTA from './CTA'
 import Testimonials from './testimonial'
 import FAQ from './faq'
 import Sponsors from './sponsors'
-import Footer from '../footer'
 import Contact from './contact'
 import Map from './map'
 
+
+
+
+
+
 function homePage() {
+  
+  
+
+
   return (
     <div>
       <Hero />
@@ -22,7 +30,6 @@ function homePage() {
       <Contact />
       <Map />
       <Sponsors />
-      <Footer />
     </div>
   )
 }
