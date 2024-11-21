@@ -15,11 +15,16 @@ export const MyContext = createContext()
 
 function app() {
   const [menu, setMenu] = useState(false)
-  console.log(menu);
+  const [onScreenPage, setOnScreenPage] = useState({
+    home: true,
+    about: false,
+    players: false,
+    gallery: false
+  })
   
   return (
     <div className={`relative w-full h-screen ${menu ? 'overflow-hidden' : 'overflow-auto'}`}>
-    <MyContext.Provider value={ {menu, setMenu} }>
+    <MyContext.Provider value={ {menu, setMenu, onScreenPage, setOnScreenPage} }>
       
         <Header />
 

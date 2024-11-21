@@ -96,18 +96,22 @@ export const testimonials = [
 export const navItems = [
   {
     title: 'Home',
+    state: 'home',
     path: '/'
   },
   {
     title: 'About',
+    state: 'about',
     path: '/about'
   },
   {
     title: 'Players',
+    state: 'players',
     path: '/players'
   },
   {
     title: 'Gallery',
+    state: 'gallery',
     path: '/gallery'
   }
 ]

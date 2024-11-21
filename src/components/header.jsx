@@ -9,7 +9,7 @@ import { MyContext } from '../app';
 
 
 function header() {
-    const {menu, setMenu} = useContext(MyContext)
+    const {menu, setMenu, onScreenPage, setOnScreenPage} = useContext(MyContext)
     console.log(menu);
     
     
@@ -17,19 +17,37 @@ function header() {
     const toggleMenu = () =>{
         setMenu(prev => !prev)
     }
+    const toggleOnScreenPage = (value) =>{
+      console.log(value);
+      
+      setOnScreenPage(prev => ({
+        
+          home: false,
+          about: false,
+          players: false,
+          gallery: false
+        ,
+        [value]: true
+      }
+      )
+      
+        
+
+     )
+  }
   return (
     <div className='flex w-full text-white justify-between px-7 md:px-4 py-3 items-center absolute top-0 '>
       <img src={logo} alt="" className='w-20 md:w-16' />
       <div className='flex gap-10 md:hidden items-center'>
       {navItems.map((item, index) =>(
-            <Link to={item.path} className='nav-item' key={index}>
+            <Link to={item.path} onClick={()=> toggleOnScreenPage(Object.keys(onScreenPage)[index])} className={`nav-item ${onScreenPage[Object.keys(onScreenPage)[index]] ? 'text-Basketball': 'text-white'}`}   key={index}>
               {item.title}
             </Link>
           ))}
       </div>
 
       <button className='button md:hidden'>
-        Contact Us
+        Enroll Now
       </button>
 
       <IoMdMenu className='text-5xl hover:text-Basketball md:block hidden' onClick={toggleMenu} />
@@ -49,7 +67,7 @@ function header() {
       </div>
 
       <button className='button mt-5'>
-        Contact Us
+        Enroll Now
       </button>
       </div> }
     </div>
