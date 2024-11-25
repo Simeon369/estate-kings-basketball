@@ -69,6 +69,16 @@
 .contact-input{
     @apply w-full h-10 pl-3 hover:outline-none text-black
 }
+
+.values{
+    @apply text-center w-[75%] flex flex-col items-center py-10
+}
+
+.values h1{
+    @apply flex items-center font-bold text-3xl text-Basketball mb-3
+}
+
+
 @media screen and (max-width: 768px) {
     .cta{
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./assets/images/cta_image.jpg);
