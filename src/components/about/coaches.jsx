@@ -17,7 +17,7 @@ const coaches = () => {
         </div>
         
             {coachesData.map((item, index)=>(
-                <div className='flex md:flex-col md:items-center gap-5 md:gap-0 rounded-xl md:w-[90%] bg-white my-10 p-4 '>
+                <div key={index} className='flex md:flex-col md:items-center gap-5 md:gap-0 rounded-xl md:w-[90%] bg-white my-10 p-4 '>
                   <div className='p-5 '>
                     <div className='md:flex flex-col items-center gap-3'>
                       <img src={item.image} className='w-[250px] rounded-full' alt="" />

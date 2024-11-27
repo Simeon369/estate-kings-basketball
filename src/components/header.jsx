@@ -18,7 +18,6 @@ function header() {
         setMenu(prev => !prev)
     }
     const toggleOnScreenPage = (value) =>{
-      console.log(value);
       
       setOnScreenPage(prev => ({
         
