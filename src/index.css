@@ -79,6 +79,18 @@
     @apply flex items-center font-bold text-3xl text-Basketball mb-3
 }
 
+.player-info{
+    @apply flex flex-col items-center
+}
+
+.player-info h2{
+    @apply font-semibold text-lg md:text-xs
+}
+
+.player-info h1{
+    @apply font-bold text-xl md:text-sm
+}
+
 
 @media screen and (max-width: 768px) {
     .cta{

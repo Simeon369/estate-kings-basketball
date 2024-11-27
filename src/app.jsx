@@ -4,6 +4,7 @@ import AboutPage from './components/about/AboutPage'
 import Gallery from './components/gallery/Gallery'
 import Contact from './components/contact-page/Contact'
 import Players from './components/players/Players'
+import PlayerInfo from './components/players/player-info'
 import Header from './components/header'
 import Footer from './components/footer'
 import { Route, Routes } from 'react-router-dom'
@@ -33,6 +34,7 @@ function app() {
           <Route path='/about' element={<AboutPage />}/>
           <Route path='/gallery' element={<Gallery />}/>
           <Route path='/players' element={<Players />}/>
+          <Route path='/player-info' element={<PlayerInfo />}/>
           <Route path='/contact' element={<Contact />}/>
         </Routes>
         
