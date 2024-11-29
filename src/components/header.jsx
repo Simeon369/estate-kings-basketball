@@ -10,7 +10,7 @@ import { MyContext } from '../app';
 
 function header() {
     const {menu, setMenu, onScreenPage, setOnScreenPage} = useContext(MyContext)
-    console.log(menu);
+    
     
     
 
@@ -24,7 +24,8 @@ function header() {
           home: false,
           about: false,
           players: false,
-          gallery: false
+          gallery: false,
+          enroll: false
         ,
         [value]: true
       }
@@ -45,9 +46,9 @@ function header() {
           ))}
       </div>
 
-      <button className='button md:hidden'>
+      <Link to={'/enroll'} onClick={()=> toggleOnScreenPage(Object.keys(onScreenPage)[index])} className='button md:hidden'>
         Enroll Now
-      </button>
+      </Link>
 
       <IoMdMenu className='text-5xl hover:text-Basketball md:block hidden' onClick={toggleMenu} />
         
@@ -59,15 +60,15 @@ function header() {
 
         <div className='text-black text-center flex flex-col gap-5'>
           {navItems.map((item, index) =>(
-            <Link to={item.path} key={index} onClick={toggleMenu}>{item.title}</Link>
+            <Link to={item.path} key={index}  onClick={()=>{toggleMenu(); toggleOnScreenPage(Object.keys(onScreenPage)[index])}}>{item.title}</Link>
           ))}
         
         
       </div>
 
-      <button className='button mt-5'>
+      <Link to={'/enroll'} onClick={()=>{toggleMenu(); toggleOnScreenPage(Object.keys(onScreenPage)[index])}} className='button mt-5'>
         Enroll Now
-      </button>
+      </Link>
       </div> }
     </div>
   )

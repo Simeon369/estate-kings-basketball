@@ -2,7 +2,7 @@ import React from 'react'
 import HomePage from './components/home-page/Home-page'
 import AboutPage from './components/about/AboutPage'
 import Gallery from './components/gallery/Gallery'
-import Contact from './components/contact-page/Contact'
+import Enroll from './components/enroll/enroll'
 import Players from './components/players/Players'
 import PlayerInfo from './components/players/player-info'
 import Header from './components/header'
@@ -17,14 +17,15 @@ export const MyContext = createContext()
 function app() {
   const [menu, setMenu] = useState(false)
   const [onScreenPage, setOnScreenPage] = useState({
-    home: true,
+    home: false,
     about: false,
     players: false,
-    gallery: false
+    gallery: false,
+    enroll: false
   })
   
   return (
-    <div className={`relative w-full h-screen ${menu ? 'overflow-hidden' : 'overflow-auto'}`}>
+    <div className={`relative w-full h-screen ${menu ? 'overflow-hidden' : 'overflow-auto'}`}> 
     <MyContext.Provider value={ {menu, setMenu, onScreenPage, setOnScreenPage} }>
       
         <Header />
@@ -35,7 +36,7 @@ function app() {
           <Route path='/gallery' element={<Gallery />}/>
           <Route path='/players' element={<Players />}/>
           <Route path='/player-info' element={<PlayerInfo />}/>
-          <Route path='/contact' element={<Contact />}/>
+          <Route path='/enroll' element={<Enroll />}/>
         </Routes>
         
         <Footer />
