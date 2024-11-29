@@ -10,7 +10,10 @@ export const players = [
         firstname: 'Leonard',
         middlename: 'Adigun',
         age: '16',
-        position: 'sf',
+        position: {
+            short: 'sf',
+            long: 'Small Forward'
+        },
         height: '195',
         weight: '85',
         wingspan: '210',
@@ -21,7 +24,10 @@ export const players = [
         firstname: 'Holiday',
         middlename: 'Favour',
         age: '18',
-        position: 'pg',
+        position: {
+            short: 'pg',
+            long: 'Point Guard'
+        },
         height: '201',
         weight: '95',
         wingspan: '223',
@@ -32,7 +38,10 @@ export const players = [
         firstname: 'Holmgren',
         middlename: 'Musa',
         age: '14',
-        position: 'c',
+        position: {
+            short: 'c',
+            long: 'Center'
+        },
         height: '188',
         weight: '70',
         wingspan: '197',
@@ -43,7 +52,10 @@ export const players = [
         firstname: 'McGrady',
         middlename: 'Debola',
         age: '19',
-        position: 'sg',
+        position: {
+            short: 'sg',
+            long: 'Shooting Guard'
+        },
         height: '215',
         weight: '102',
         wingspan: '225',
@@ -54,7 +66,10 @@ export const players = [
         firstname: 'Paul',
         middlename: 'Augustine',
         age: '19',
-        position: 'pg',
+        position: {
+            short: 'pg',
+            long: 'Point Guard'
+        },
         height: '199',
         weight: '90',
         wingspan: '217',
