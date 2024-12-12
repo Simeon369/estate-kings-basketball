@@ -31,7 +31,7 @@ const Graphics = () => {
                 for (const path in data) {
                   
                   const img = new Image();
-                  img.src = `http://localhost:1337${data[path].imageUrl}`;
+                  img.src = `https://estate-kings-basketball-backend.onrender.com${data[path].imageUrl}`;
             
                   await new Promise((resolve) => {
                   
