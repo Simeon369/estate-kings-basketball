@@ -18,7 +18,12 @@ const list = () => {
            potraitUrl : `http://localhost:1337/${item.potrait.url}`,
            surname : item.surname,
            firstname : item.firstname,
-           position : item.position.short,
+           position : item.position,
+           height : item.height,
+           weight : item.weight,
+           wingspan : item.wingspan,
+           age: item.age,
+           category: item.category
         }))
         console.log(data);
         
@@ -37,7 +42,7 @@ const list = () => {
                 <img src={item.potraitUrl} alt="" className='w-[100%] rounded-t-3xl'/>
                 <div className='flex justify-between px-5 py-3 font-semibold bg-Basketball text-white rounded-b-3xl'>
                     <h1>{item.surname + ' ' + item.firstname.slice(0,1)+ '.'}</h1>
-                    <h2>{item.position}</h2>
+                    <h2>{item.position.short}</h2>
                 </div>
             </Link>
         ))}

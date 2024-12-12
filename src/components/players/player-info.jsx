@@ -15,19 +15,19 @@ const playerInfo = () => {
       <div className='w-full grid grid-cols-4 gap-10 md:gap-4 md:grid-cols-2 bg-white p-10'>
         <div className='player-info'>
           <h2>Height</h2>
-          <h1>{playerData.height}cm</h1>
+          <h1>{playerData.height.cm}cm</h1>
         </div>
         <div className='player-info'>
           <h2>Weight</h2>
-          <h1>{playerData.weight}kg</h1>
+          <h1>{playerData.weight.kg}kg</h1>
         </div>
         <div className='player-info'>
           <h2>Category</h2>
-          <h1>Academy</h1>
+          <h1 className='uppercase'>{playerData.category}</h1>
         </div>
         <div className='player-info'>
           <h2>Position</h2>
-          <h1>{playerData.position.long}</h1>
+          <h1 className='uppercase'>{playerData.position.long}</h1>
         </div>
         <div className='player-info col-start-2 md:col-start-1'>
           <h2>Age</h2>
@@ -35,7 +35,7 @@ const playerInfo = () => {
         </div>
         <div className='player-info'>
           <h2>Wing Span</h2>
-          <h1>{playerData.wingspan}cm</h1>
+          <h1>{playerData.wingspan.cm}cm</h1>
         </div>
 
       </div>
