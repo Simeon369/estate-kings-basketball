@@ -15,7 +15,7 @@ const list = () => {
           "https://estate-kings-basketball-backend.onrender.com/api/players?populate=*"
         ) 
         const data = response.data.data.map((item)=>({
-           potraitUrl : `https://estate-kings-basketball-backend.onrender.com/${item.potrait.url}`,
+           potraitUrl : `https://estate-kings-basketball-backend.onrender.com${item.potrait.url}`,
            surname : item.surname,
            firstname : item.firstname,
            position : item.position,
