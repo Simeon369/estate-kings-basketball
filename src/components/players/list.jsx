@@ -12,10 +12,10 @@ const list = () => {
     const getPlayers = async() =>{
       try{
         const response = await axios.get(
-          "http://localhost:1337/api/players?populate=*"
+          "https://estate-kings-basketball-backend.onrender.com/api/players?populate=*"
         ) 
         const data = response.data.data.map((item)=>({
-           potraitUrl : `http://localhost:1337/${item.potrait.url}`,
+           potraitUrl : `https://estate-kings-basketball-backend.onrender.com/${item.potrait.url}`,
            surname : item.surname,
            firstname : item.firstname,
            position : item.position,
