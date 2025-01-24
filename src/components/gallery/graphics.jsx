@@ -17,10 +17,10 @@ const Graphics = () => {
                     "https://strapi-ddjt.onrender.com/api/galleries?populate=*"
                 )
                 
+                console.log(response);
                 
                 const data = response.data.data.map((item) => ({
                     id: item.id,
-                    title: item.title,
                     description: item.description,
                     imageUrl: item.image.url,
                 }));
@@ -31,7 +31,7 @@ const Graphics = () => {
                 for (const path in data) {
                   
                   const img = new Image();
-                  img.src = `https://estate-kings-basketball-backend.onrender.com${data[path].imageUrl}`;
+                  img.src = `https://strapi-ddjt.onrender.com${data[path].imageUrl}`;
             
                   await new Promise((resolve) => {
                   
