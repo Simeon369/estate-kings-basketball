@@ -22,7 +22,7 @@ const Graphics = () => {
                 const data = response.data.data.map((item) => ({
                     id: item.id,
                     description: item.description,
-                    imageUrl: item.image.url,
+                    imageUrl: item.photo.url,
                 }));
 
                 const ratio45 = []
