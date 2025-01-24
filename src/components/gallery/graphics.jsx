@@ -14,7 +14,7 @@ const Graphics = () => {
         const fetchGallery = async () =>{
             try{
                 const response = await axios.get(
-                    "https://estate-kings-basketball-backend.onrender.com/api/galleries?populate=*"
+                    "https://strapi-ddjt.onrender.com/api/galleries?populate=*"
                 )
                 
                 
