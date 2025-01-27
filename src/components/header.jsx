@@ -66,7 +66,7 @@ function header() {
         
       </div>
 
-      <Link to={'/enroll'} onClick={()=>{toggleMenu(); toggleOnScreenPage(Object.keys(onScreenPage)[index])}} className='button mt-5'>
+      <Link to={'/enroll'} onClick={()=>{toggleMenu(); toggleOnScreenPage(Object.keys(onScreenPage)[4])}} className='button mt-5'>
         Enroll Now
       </Link>
       </div> }
