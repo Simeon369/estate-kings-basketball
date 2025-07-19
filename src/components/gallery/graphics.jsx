@@ -21,7 +21,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="bg-white grid grid-cols-3 gap-6 p-6">
+    <div className="bg-white grid grid-cols-3 md:grid-cols-1 gap-6 p-6">
       {items.map((item) => (
         <div key={item._id} className="">
           <img
