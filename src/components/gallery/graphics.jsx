@@ -27,7 +27,7 @@ export default function Gallery() {
           <img
             src={item.image.asset.url}
             alt="gallery item"
-            className="w-full"
+            className="w-full rounded-lg"
           />
           <p className="mt-2 text-center text-Basketball">{item.description}</p>
         </div>
