@@ -24,10 +24,6 @@ export default {
         'sm': {'max': '426px'},
         // => @media (max-width: 639px) { ... }
       },
-      backgroundImage: {
-        'home-hero': "url('/public/hero.jpg')",
-        'about-hero': "url('/src/assets/image/goa-abesan3.jpg')"
-      },
     },
   },
   plugins: [],
