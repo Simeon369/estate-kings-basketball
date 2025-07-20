@@ -5,13 +5,13 @@ export default function Gallery() {
   const [items, setItems] = useState([]);
 
   const galleryQuery = `*[_type == "gallery"]{
-  _id,
-  image{
-    asset->{
-      url
-    }
-  },
-  description
+    _id,
+    image{
+      asset->{
+        url
+      }
+    },
+    description
   }`;
 
   useEffect(() => {
@@ -21,17 +21,19 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="bg-white grid grid-cols-3 md:grid-cols-1 gap-6 p-6">
-      {items.map((item) => (
-        <div key={item._id} className="">
-          <img
-            src={item.image.asset.url}
-            alt="gallery item"
-            className="w-full rounded-lg"
-          />
-          <p className="mt-2 text-center text-Basketball">{item.description}</p>
-        </div>
-      ))}
+    <div className="bg-white px-4 py-8">
+      <div className=" md:columns-1 columns-3 gap-4 space-y-4">
+        {items.map((item) => (
+          <div key={item._id} className="relative flex justify-center items-end break-inside-avoid">
+            <img
+              src={item.image.asset.url}
+              alt="gallery item"
+              className="w-full rounded-lg object-cover"
+            />
+            <p className="absolute text-center text-white">{item.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
