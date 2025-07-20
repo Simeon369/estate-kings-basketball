@@ -24,6 +24,7 @@ function header() {
           home: false,
           about: false,
           players: false,
+          latest: false,
           gallery: false,
           enroll: false
         ,

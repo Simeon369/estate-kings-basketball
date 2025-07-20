@@ -110,6 +110,11 @@ export const navItems = [
     path: '/players'
   },
   {
+    title: 'News',
+    state: 'news',
+    path: '/news'
+  },
+  {
     title: 'Gallery',
     state: 'gallery',
     path: '/gallery'

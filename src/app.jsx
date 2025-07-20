@@ -7,6 +7,7 @@ import Players from './components/players/Players'
 import PlayerInfo from './components/players/player-info'
 import Header from './components/header'
 import Footer from './components/footer'
+import News from './components/news/news'
 import { Route, Routes } from 'react-router-dom'
 import { createContext, useState } from "react";
 
@@ -20,6 +21,7 @@ function app() {
     home: false,
     about: false,
     players: false,
+    news: false,
     gallery: false,
     enroll: false
   })
@@ -35,6 +37,7 @@ function app() {
           <Route path='/about' element={<AboutPage />}/>
           <Route path='/gallery' element={<Gallery />}/>
           <Route path='/players' element={<Players />}/>
+          <Route path='/news' element={<News />}/>
           <Route path='/player-info' element={<PlayerInfo />}/>
           <Route path='/enroll' element={<Enroll />}/>
         </Routes>

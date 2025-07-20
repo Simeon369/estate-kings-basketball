@@ -60,6 +60,9 @@
 .enroll-hero{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url('./assets/images/goa-abesan.jpg');
 }
+.news-hero{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url('./assets/images/newsHero.webp');
+}
 
 .cta{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./assets/images/goa-abesan.jpg);
